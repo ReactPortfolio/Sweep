@@ -1,0 +1,37 @@
+{
+  "name": "sweep",
+  "version": "0.0.1",
+  "description": "Very Popular Indian Card Game Which can be played between 2 or 4 players.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "typings": "tsc install"
+  },
+  "keywords": [
+    "React",
+    "Card",
+    "Game",
+    "Webpack",
+    "Typescript",
+    "Sweep",
+    "Seep"
+  ],
+  "author": "asharmaanil@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^15.0.2",
+    "@types/react-dom": "^0.14.21",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.0.0-beta.18",
+    "path": "^0.12.7",
+    "source-map-loader": "^0.1.6",
+    "typescript": "^2.1.5",
+    "webpack": "^2.1.0-beta.25",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
