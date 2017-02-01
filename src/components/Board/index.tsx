@@ -29,7 +29,7 @@ export default (props: any) => {
         display: 'flex',
         flexDirection: 'row',
         backgroundColor: 'green',
-        width: '50%',
+        width: '549px',
         height: '300px',
         padding: '20px',
         borderRadius: '10px'
