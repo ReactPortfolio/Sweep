@@ -12,13 +12,15 @@ interface CardHomeProps {
 }
 
 export default (props: CardHomeProps) => {
-  const multiplier = 13;
+  const multiplier = 13,
+  cardWidth = 68,
+  cardHeight = 99;
   let cardHomeStyle: any = {
     position: 'relative',
-    width: '68px', //Need to Store in constants for Card width
+    width: cardWidth + 'px', //Need to Store in constants for Card width
     margin: '5px',
     marginTop: '0px',
-    height: ((multiplier * (props.data.length -1) + 99) + 'px'),
+    height: ((multiplier * (props.data.length -1) + cardHeight) + 'px'),
     border: '1px solid red'
   };
   const numberHomeStyle = {

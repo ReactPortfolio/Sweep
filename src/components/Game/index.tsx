@@ -32,20 +32,20 @@ export default (props: any) => {
   <Board />
   <Player
   isTurn = {false}
-  playerScore={10}
+  playerScore={30}
   teamScore={30}
   profilePic={''}
   position= {'right'}
-  isTwoPlayerGame={true}
+  isTwoPlayerGame={false}
   />
   </div>
   <Player
   isTurn = {false}
-  playerScore={10}
+  playerScore={50}
   teamScore={50}
   profilePic={''}
   position= {'bottom'}
-  isTwoPlayerGame={true}
+  isTwoPlayerGame={false}
   />
   </div>;
 }
