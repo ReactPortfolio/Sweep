@@ -29,7 +29,7 @@ export default (props: IPlayerProps) => {
         border: 'none',
       },
       scoreStyle : {
-          fontSize: isTwoPlayerGame ? '20px' : '30px',
+          fontSize: isTwoPlayerGame ? '25px' : '30px',
           borderBottom:  isVertical ? '5px solid silver' : 'none',
           borderRight: !isVertical ? '5px solid silver' : 'none'
       },
@@ -47,18 +47,25 @@ export default (props: IPlayerProps) => {
           height: isVertical ? width + 'px': width/3 + 'px',
           border: '5px solid silver',
           margin: '25px'
+      },
+      profileName: {
+          position: 'absolute'
+      },
+      profileImage: {
+        backgroundImage: `url(assets/avatar/${props.profilePic}.svg)`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        width: (width/3) - 10 + 'px',
+        height: (width/3) - 10 + 'px'
       }
 
-    }
-    const profileName: any = {
-        position: 'absolute'
     }
     const score = isTwoPlayerGame ? playerScore + '/' + teamScore : teamScore + '';
     return <div style={styles.playerStyle as any}>
         <div style={{...styles.baseStyle, ...styles.scoreStyle} as any}>{score}</div>
         <div style={{...styles.baseStyle, ...styles.profileStyle} as any}>
-            <div style={profileName}></div>
-
+            <div style={styles.profileName as any}></div>
+            <div style={styles.profileImage as any}></div>
         </div>
         <div style={styles.baseStyle as any}>
         <Card
@@ -67,8 +74,6 @@ export default (props: IPlayerProps) => {
         type={'spades'}
         style={{height: (width / 3) -10 + 'px',width: (68/99) * (width/3) }}
         />
-
-
         </div>
     </div>
 }

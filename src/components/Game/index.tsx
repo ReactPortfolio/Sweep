@@ -16,7 +16,7 @@ export default (props: any) => {
   isTurn = {false}
   playerScore={10}
   teamScore={40}
-  profilePic={''}
+  profilePic={'spiderman'}
   position= {'top'}
   isTwoPlayerGame={true}
   />
@@ -25,7 +25,7 @@ export default (props: any) => {
   isTurn = {false}
   playerScore={10}
   teamScore={20}
-  profilePic={''}
+  profilePic={'person'}
   position= {'left'}
   isTwoPlayerGame={true}
   />
@@ -34,7 +34,7 @@ export default (props: any) => {
   isTurn = {false}
   playerScore={30}
   teamScore={30}
-  profilePic={''}
+  profilePic={'girl'}
   position= {'right'}
   isTwoPlayerGame={false}
   />
@@ -43,7 +43,7 @@ export default (props: any) => {
   isTurn = {false}
   playerScore={50}
   teamScore={50}
-  profilePic={''}
+  profilePic={'ninja'}
   position= {'bottom'}
   isTwoPlayerGame={false}
   />
