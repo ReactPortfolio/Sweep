@@ -53,7 +53,6 @@ export default (props: CardHomeProps) => {
         style={activeCardStyle}
          key={index} />
        });
-  console.log('el', el);
   return <div style={cardHomeStyle}>
   <div style={numberHomeStyle as any}>{props.number}</div>
   {el}
