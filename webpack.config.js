@@ -1,6 +1,5 @@
 var webpack = require('webpack');
 var path = require('path');
-console.log("psa:::",path.join(__dirname+'/dist'));
 module.exports = {
     entry: [
         "./src/root.tsx"
